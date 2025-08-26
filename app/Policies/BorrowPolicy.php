@@ -22,9 +22,7 @@ class BorrowPolicy
         return $borrow->user_id === $user->id;
     }
 
-    // برای authorize با کلاس: $this->authorize('viewMyBorrows', Borrow::class)
     public function viewMyBorrows(User $user)
     {
-        return true; // یا هر قانون دلخواه
-    }
+        return true;    }
 }
